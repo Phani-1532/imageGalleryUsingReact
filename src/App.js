@@ -28,7 +28,7 @@ function App() {
           <h1>Image Gallery Using React!</h1>
           <form onSubmit={submitHandler}>
           <input type='text' placeholder='Search Here....' value={search} onChange={changeHandler} />
-          <input type='submit' name='search' />
+          <input type='submit' name='search' style={{cursor:'pointer'}} />
           </form>
           <br></br>
         </center>
