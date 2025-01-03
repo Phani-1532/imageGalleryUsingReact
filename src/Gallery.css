@@ -1,0 +1,49 @@
+/* Gallery.css */
+
+/* General styles for the gallery */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Ensures the items wrap onto the next row on smaller screens */
+     /* Add some spacing around the items */
+  }
+  
+  .col-md-4 {
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with spacing */
+  }
+  
+  .img img {
+    width: 200px; /* Make the images responsive */
+    height: 200px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners to images */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add smooth hover effect */
+    object-fit: cover;
+  }
+  
+  .img img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .col-md-4 {
+      flex: 1 1 calc(100% - 20px); /* 1 item per row on mobile */
+    }
+
+    .img img{
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Keep the image full-width while maintaining aspect ratio */
+  
+    }
+  }
+  
