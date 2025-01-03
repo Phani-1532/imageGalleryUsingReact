@@ -32,7 +32,7 @@ function App() {
           </form>
           <br></br>
         </center>
-        {data.length >= 1 ? <Gallery photos={data} /> : <h2>Your desired data is Loading.....</h2>} 
+        {data.length >= 1 ? <Gallery photos={data} /> : <h2>You have to Search to get your desired data </h2>} 
 
       </div>
     </>
