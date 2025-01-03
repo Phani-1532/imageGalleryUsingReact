@@ -7,7 +7,7 @@
      /* Add some spacing around the items */
   }
   
-  .col-md-4 {
+  .col {
     padding: 10px;
     box-sizing: border-box;
     flex: 1 1 calc(33.333% - 20px); /* 3 items per row with spacing */
@@ -28,14 +28,14 @@
   
   /* Responsive design adjustments */
   @media (max-width: 768px) {
-    .col-md-4 {
+    .col {
       flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
     }
   }
   
   
   @media (max-width: 480px) {
-    .col-md-4 {
+    .col {
       flex: 1 1 calc(100% - 20px); /* 1 item per row on mobile */
     }
 
