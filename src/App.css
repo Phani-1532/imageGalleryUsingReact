@@ -1,38 +1,72 @@
-.App {
+h1 {
+  font-size: 3rem;
+  color: #ff5e57;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #ff5e57, #ff8e57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(255, 94, 87, 0.5);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #ff8e57;
+  font-style: italic;
   text-align: center;
+  margin-top: 30px;
+  text-shadow: 1px 1px 6px rgba(255, 142, 87, 0.4);
+  background: linear-gradient(90deg, #ff8e57, #ff5e57);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 2s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type='text'] {
+  width: 75%;
+  max-width: 500px;
+  padding: 12px 18px;
+  font-size: 1.1rem;
+  border: 2px solid #ff5e57;
+  border-radius: 30px;
+  outline: none;
+  background: rgba(255, 94, 87, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type='text']:focus {
+  border-color: #ff8e57;
+  background: rgba(255, 142, 87, 0.1);
+  box-shadow: 0 0 12px rgba(255, 94, 87, 0.6);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type='submit'] {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
   color: white;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #ff5e57, #ff8e57);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+input[type='submit']:hover {
+  background: linear-gradient(135deg, #ff8e57, #ff5e57);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 94, 87, 0.6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
